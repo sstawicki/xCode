@@ -1,4 +1,4 @@
-package com.xcode.rest;
+package com.xcode.rest.task.two;
 
 public class ExceptionJSONInfo {
     private String url;

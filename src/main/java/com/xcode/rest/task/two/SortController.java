@@ -1,5 +1,7 @@
-package com.xcode.rest;
+package com.xcode.rest.task.two;
 
+import com.xcode.rest.task.two.Data;
+import com.xcode.rest.task.two.NumbersSort;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,12 +14,6 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 public class SortController {
     @Autowired
     NumbersSort numbersSort;
-
-   /* @RequestMapping(method = RequestMethod.POST, value = "/numbers/sort-command", consumes =  APPLICATION_JSON_VALUE)
-    public int[] sortCommand(@RequestBody Data data, @RequestHeader("User-Agent") String userAgent){
-        System.out.println(userAgent);
-        return numbersSort.sorts(data.getNumbers(),data.getOrder(), userAgent);
-    } */
 
     @RequestMapping(method = RequestMethod.POST, value = "/numbers/sort-command", consumes =  APPLICATION_JSON_VALUE)
     public ResponseEntity<?> sortCommand(@RequestBody Data data){

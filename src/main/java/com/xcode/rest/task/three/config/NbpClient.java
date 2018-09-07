@@ -1,14 +1,13 @@
-package com.xcode.rest;
+package com.xcode.rest.task.three.config;
 
-import com.sun.deploy.net.HttpResponse;
+
+import com.xcode.rest.task.three.domain.NbpTableDto;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.net.HttpURLConnection;
 import java.net.URI;
 import java.util.ArrayList;
 import java.util.Arrays;

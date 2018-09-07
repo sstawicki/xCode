@@ -1,5 +1,8 @@
-package com.xcode.rest;
+package com.xcode.rest.task.three.controller;
 
+import com.xcode.rest.task.three.config.NbpClient;
+import com.xcode.rest.task.three.domain.NbpTableDto;
+import com.xcode.rest.task.three.domain.RatesDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

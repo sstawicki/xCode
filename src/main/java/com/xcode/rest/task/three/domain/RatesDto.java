@@ -1,4 +1,4 @@
-package com.xcode.rest;
+package com.xcode.rest.task.three.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -30,14 +30,5 @@ public class RatesDto {
 
     public BigDecimal getMid() {
         return mid;
-    }
-
-    @Override
-    public String toString() {
-        return "RatesDto{" +
-                "currency='" + currency + '\'' +
-                ", code='" + code + '\'' +
-                ", mid=" + mid +
-                '}';
     }
 }

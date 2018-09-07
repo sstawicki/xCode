@@ -1,13 +1,11 @@
-package com.xcode.rest;
+package com.xcode.rest.task.three.config;
 
-import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 @Configuration
-@Getter
 public class CoreConfiguration {
 
     @Value("${nbp.api.endpoint.prod}")

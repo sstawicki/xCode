@@ -1,4 +1,4 @@
-package com.xcode.rest;
+package com.xcode.rest.task.three.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -38,15 +38,5 @@ public class NbpTableDto {
 
     public List<RatesDto> getRates() {
         return rates;
-    }
-
-    @Override
-    public String toString() {
-        return "NbpTableDto{" +
-                "table='" + table + '\'' +
-                ", no='" + no + '\'' +
-                ", effectiveDate=" + effectiveDate +
-                ", rates=" + rates +
-                '}';
     }
 }

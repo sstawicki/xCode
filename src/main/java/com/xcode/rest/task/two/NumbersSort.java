@@ -1,4 +1,4 @@
-package com.xcode.rest;
+package com.xcode.rest.task.two;
 
 import org.springframework.stereotype.Component;
 
