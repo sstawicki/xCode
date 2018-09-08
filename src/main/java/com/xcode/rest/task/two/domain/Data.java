@@ -1,17 +1,19 @@
-package com.xcode.rest.task.two;
+package com.xcode.rest.task.two.domain;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class DataDto {
+import java.util.Arrays;
+
+public class Data {
     @JsonProperty("numbers")
     private String numbers;
     @JsonProperty("order")
     private String order;
 
-    public DataDto() {
+    public Data() {
     }
 
-    public DataDto(String numbers, String order) {
+    public Data(String numbers, String order) {
         this.numbers = numbers;
         this.order = order;
     }
@@ -24,11 +26,4 @@ public class DataDto {
         return order;
     }
 
-    @Override
-    public String toString() {
-        return "DataDto{" +
-                "numbers='" + numbers + '\'' +
-                ", order='" + order + '\'' +
-                '}';
-    }
 }

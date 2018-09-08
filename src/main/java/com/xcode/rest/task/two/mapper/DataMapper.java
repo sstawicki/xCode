@@ -1,5 +1,7 @@
-package com.xcode.rest.task.two;
+package com.xcode.rest.task.two.mapper;
 
+import com.xcode.rest.task.two.domain.Data;
+import com.xcode.rest.task.two.domain.DataDto;
 import org.springframework.stereotype.Component;
 
 @Component

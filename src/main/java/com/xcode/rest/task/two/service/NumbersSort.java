@@ -1,4 +1,4 @@
-package com.xcode.rest.task.two;
+package com.xcode.rest.task.two.service;
 
 import org.springframework.stereotype.Component;
 
