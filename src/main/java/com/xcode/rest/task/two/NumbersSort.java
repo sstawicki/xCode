@@ -24,7 +24,6 @@ public class NumbersSort {
             }
             return resultDESC;
         } else {
-            // dopisać Exception
             return numbers;
         }
     }
