@@ -37,13 +37,11 @@ public class SortController {
                 int[] sort = numbersSort.sorts(numbers, data.getOrder());
                 ResponseEntity<?> responseEntity = new ResponseEntity<>(sort, HttpStatus.OK);
                 int httpStatus = responseEntity.getStatusCodeValue();
-                //return new ResponseEntity<>("sort numbers: " + Arrays.toString(sort) + " code HTTP is: " + httpStatus, HttpStatus.OK);
                 return "Numbers sort: " + Arrays.toString(sort) + " code HTTP is: " + httpStatus;
             }
         } catch (Exception ex) {
             ResponseEntity<?> responseEntity = new ResponseEntity<>("Wrong Data ", HttpStatus.BAD_REQUEST);
             int httpStatus = responseEntity.getStatusCodeValue();
-            //return new ResponseEntity<>("Wrong Data error ==> code HTTP is: " + httpStatus, HttpStatus.BAD_REQUEST);
             return "Wrong Data error ==> code HTTP is: " + httpStatus;
         }
     }
